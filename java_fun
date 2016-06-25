@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class java_fun {
+
+    public static void main(String[] args) {
+        // Prints "Hello, World" to the terminal window.
+
+        String s;
+ 
+      	Scanner in = new Scanner(System.in);
+      	System.out.println("Enter a string");
+      	s = in.nextLine();
+      	System.out.println("You entered string "+s);
+
+      	String[] str_arr = s.split(" ");
+
+      	s = str_arr[str_arr.length - 1];
+      	for (int i = str_arr.length - 2; i >= 0; i--)
+      	{
+      		s = s + " " + str_arr[i];
+      	}
+
+      	System.out.println("string reverse is " + s);
+
+     
+    }
+
+}
