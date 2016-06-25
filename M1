@@ -1,0 +1,38 @@
+main() {
+
+printf " Please print an array-finish with -1\n"
+new j=0
+new a[100]
+new b[]=[1,2,3,4,5]
+new size=5;
+for (;;) 
+{
+new check=getvalue()
+if (check!=-1){
+a[j]=check
+j=j+1
+}
+else {
+break
+}
+}
+
+
+new sumA=sumIt(a,j)
+printf "The sum is %d\n",sumA
+
+new sumB=sumIt(b,size)
+printf "The sum is %d\n",sumB
+}
+
+sumIt(array[],arraySize)
+{
+
+new sum=0
+
+for (new i=0;i<arraySize; i++){
+sum=sum+ array[i]
+}
+printf "%d\n",sum
+return sum
+}
